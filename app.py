@@ -174,7 +174,7 @@ with gr.Blocks() as demo:
             gr.Markdown("<center><h6>or<h6></center>")
             file = gr.File(label='PDF', file_types=['.pdf'])
             question = gr.Textbox(label='question')
-            api_key = gr.Textbox(label = 'OpenAI API Key')
+            api_key = gr.Textbox(label = 'OpenAI API Key', type = 'password')
             btn = gr.Button(value='Submit')
             btn.style(full_width=True)
 
